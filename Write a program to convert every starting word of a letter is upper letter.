@@ -1,0 +1,16 @@
+import java.util.*;
+ public class Solution {
+     public static void main(String[] args){
+	 Scanner sc = new Scanner(System.in);
+     System.out.print("Input a Sentence: ");
+	String l=sc.nextLine();
+	String upper="";
+	Scanner lineScan =new Scanner(l);
+	while(lineScan.hasNext())
+{
+	String m=lineScan.next();
+	upper+=Character.toUpperCase(m.charAt(0))+m.substring(1)+ " ";
+}
+System.out.println(upper.trim());
+    }
+}
